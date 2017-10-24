@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>KIEI 925 - Week 6</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style media="screen">
+      body {
+        line-height: 1.7em;
+      }
+      pre code {
+        color: #bd4147;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Week 6</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="games.html">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="weather.html">Weather</a>
+          </li>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+
+      <div class="row">
+        <div class="col-sm-12">
+
+          <div class="card border-dark">
+            <div id="lab" class="card-header bg-dark text-white">
+              JavaScript Cheat Sheet
+            </div>
+            <div id="instructions" class="card-body mt-2">
+              <ol>
+                <li>Wondering about a variable's value?  Make it visible by using the <code>console</code>:
+                  <pre><code>
+console.debug("My variable 'obj' has the value: ")
+console.debug(obj)
+                  </code></pre>
+                </li>
+                <li>Wondering about a variable's type?
+                  <pre><code>
+console.debug("The variable 'obj' is of type: ")
+console.debug(typeof(obj))
+                  </code></pre>
+                </li>
+                <li>Trying to access a specific element of an array?
+                  <pre><code>
+let names = ["Cookie Monster", "Big Bird", "Elmo"];
+let bird = names[1];
+                  </code></pre>
+                </li>
+                <li>Trying to access a specific value of an object?
+                  <pre><code>
+let person = { name: "Cookie Monster", favoriteFruit: 'Cookies' };
+let snack = person.favoriteFruit;
+// or
+let snack = person["favoriteFruit"]
+                  </code></pre>
+                </li>
+              </ol>
+            </div>
+        </div>
+
+          <div class="card border-primary">
+            <div id="lab" class="card-header bg-primary text-white">
+              Part 1: Use JavaScript to write HTML
+            </div>
+            <div id="instructions" class="card-body mt-2">
+              <ol>
+                <li>Open the <a href="games.html">Games page</a> in a new tab. Roll the dice a few times.</li>
+                <li>The link works because another developer implemented that feature.</li>
+                <li>The developer left behind some notes about how they did it.</li>
+                <li>Find their notes and read through them.  Read the code they wrote too.</li>
+                <li>Come up with questions that you'd like to ask if you ever met the developer in person.</li>
+              </ol>
+            </div>
+        </div>
+
+        <div class="card border-primary mt-3">
+          <div id="lab" class="card-header bg-info text-white">
+            Part 2: Geolocation
+          </div>
+          <div id="instructions" class="card-body mt-2">
+            <h3>Try It</h3>
+            <ol>
+              <li>Open the <a href="location.html">Location page</a> in a new tab.</li>
+              <li>Click the link and give your browser permission to identify your current location.</li>
+              <li>After a few seconds, the satellite image should change.</li>
+            </ol>
+            <h3>Inspect It</h3>
+            <ol>
+              <li>Find the code that implements this functionality and read through it.</li>
+              <li>Come up with questions that you'd like to ask if you ever met the developer in person.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card border-primary mt-3">
+          <div id="lab" class="card-header bg-warning text-black">
+            Part 3: Background HTTP requests ("Ajax")
+          </div>
+          <div id="instructions" class="card-body mt-2">
+            <h3>Try It</h3>
+            <p><strong>We will be using a third-party service, <a href="https://www.themoviedb.org">The Movie Database</a>,
+              to retrieve information and statistics on various movies.</strong></p>
+            <ol>
+              <li>Open the <a href="movies.html">Movies page</a> in a new tab.</li>
+              <li>Enter the name of your favorite movie.  (Who are we kidding? I know you'll enter "Apollo 13".)</li>
+              <li>After a few seconds, the movie poster should appear.</li>
+            </ol>
+            <h3>Inspect it</h3>
+            <p><strong>The movie web service provides more information than just the movie poster.</strong></p>
+            <ol>
+              <li>Modify the <code>updatePage</code> function to emit all of the data that was
+                received from the service to the Console.</li>
+            </ol>
+            <h3>Enhance It</h3>
+            <ol>
+              <li>
+                Can you modify the code to display more movie data, such as the title,
+                description, and release date?
+              </li>
+              <li>
+                Can you modify the page to also the genre classifications? (Hint: use the already-defined <code>genres</code> object to retrieve an genre based on its identifier.)
+              </li>
+
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
